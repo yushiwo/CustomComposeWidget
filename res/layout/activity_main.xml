@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myspace="http://schemas.android.com/apk/res/com.example.customcomposewidget"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义组合控件" />
+    <com.example.customcomposewidget.CustomWidget 
+        android:id="@+id/custom_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="333333"
+        android:src="@drawable/baby_head" 
+        myspace:appendText="22222"
+        ></com.example.customcomposewidget.CustomWidget>
+
+</RelativeLayout>
